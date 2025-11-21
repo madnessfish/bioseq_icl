@@ -3,6 +3,9 @@
 This module handles the selection of few-shot demonstrations (examples) for in-context learning. It implements various sampling strategies to select the most effective examples from the training set for each test instance.
 
 ## Overview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/967e6691-49f0-441e-bb56-ae15d3f1aea9" width="100%">
+</p>
 
 Few-shot learning performance heavily depends on the quality and relevance of demonstration examples. This module provides multiple strategies to select demonstrations, ranging from random sampling to sophisticated similarity-based approaches.
 
