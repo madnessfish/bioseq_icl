@@ -3,7 +3,9 @@
 This module converts demonstration files and test data into complete prompts ready for LLM inference. It implements three classification scenarios with support for zero-shot, few-shot, and Chain-of-Thought (CoT) prompting strategies.
 
 ## Overview
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2a4b3ae8-7072-4f04-bc3b-ae0a127cbecb" width="100%">
+</p>
 Each script generates task-specific prompts that include:
 - System instructions defining the task
 - Few-shot examples (for few-shot prompts)
