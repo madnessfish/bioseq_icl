@@ -2,6 +2,9 @@
 A research project exploring the use of Large Language Models (LLMs) for antibody sequence analysis through in-context learning. This repository implements multiple scenarios for antibody classification tasks using few-shot and zero-shot prompting strategies.
 
 ## Overview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dbe28915-8e10-4c5e-86e0-e98070debb92" width="100%">
+</p>
 
 This project investigates how LLMs can be applied to biological sequence classification tasks, specifically focusing on antibody-related predictions. The pipeline supports three main classification scenarios with various prompting strategies including zero-shot, few-shot, and Chain-of-Thought (CoT) reasoning.
 
