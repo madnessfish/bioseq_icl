@@ -1,4 +1,7 @@
-# Can Large Language Models “Read” Biological Sequences: A Systematic Evaluation of In-Context Learning for Antibody Characterization
+# A systematic evaluation of large language models in-context learning for antibody characterization
+
+<img width="468" height="13" alt="image" src="https://github.com/user-attachments/assets/e1657a66-30cf-45bf-aac0-a48c03b2ea74" />
+
 A research project exploring the use of Large Language Models (LLMs) for antibody sequence analysis through in-context learning. This repository implements multiple scenarios for antibody classification tasks using few-shot and zero-shot prompting strategies.
 
 ## Overview
