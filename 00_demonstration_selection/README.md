@@ -49,13 +49,7 @@ python 00_demonstration.py \
   - `naiveness_rhesus`: Rhesus macaque naiveness prediction
 
 **Sampling Methods:**
-1. **random**: Random selection of balanced positive/negative examples
-2. **similar**: Most similar examples based on Levenshtein distance
-3. **similar_reverse**: Least similar examples (diversity-based)
-4. **similar_balanced_posneg**: Similar examples, balanced classes (positive then negative)
-5. **similar_balanced_pos**: Only similar positive examples
-6. **similar_balanced_negpos**: Similar examples, balanced classes (negative then positive)
-7. **similar_balanced_random**: Similar examples, balanced classes, randomly shuffled
+See the [main README](../README.md) for the sampling methods. This module also provides `similar_balanced_pos`, which uses only similar positive examples (half the sample size).
 
 **Sample Sizes:** 2, 4, 8, 16, 32, 50, 100, 200
 
