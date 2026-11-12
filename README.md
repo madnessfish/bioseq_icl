@@ -51,10 +51,21 @@ This notebook is ideal for understanding the complete workflow before running th
 ### 1. Demonstration Selection (`00_demonstration_selection/`)
 
 Select few-shot examples using various strategies:
+Each method selects *k* demonstrations for every test sequence from the training set. *k* is the sample size (number of demonstrations). Similarity is measured by the Levenshtein distance between the test sequence and a training sequence: a smaller distance means a more similar demonstration. Demonstrations appear in the prompt in the order described below, and the test sequence follows the last demonstration.
 
-- **Random sampling**: Random selection of positive and negative examples
-- **Similar sampling**: Levenshtein distance-based selection
-- **Similar (Balanced) sampling**: Ensures balanced representation of classes
+*Random sampling*
+- `random`: Randomly draws *k*/2 positive and *k*/2 negative demonstrations, separately for each test sequence. Positive demonstrations precede negative demonstrations.
+
+*Similar sampling*
+- `similar` (i.e., Similar [Original]): Selects the *k* most similar training sequences, regardless of class. The most similar demonstration is placed last, closest to the test sequence in the prompt.
+- `similar_reverse` (i.e., Similar [Reverse]): Selects the same *k* demonstrations as `similar` but reverses their order, so the most similar demonstration is placed first. This method tests the effect of demonstration order.
+
+*Similar (Balanced) sampling*
+
+Selects the *k*/2 most similar positive and the *k*/2 most similar negative training sequences. Within each class, the most similar demonstration is placed last.
+- `similar_balanced_posneg`: All positive demonstrations, then all negative demonstrations.
+- `similar_balanced_negpos`: All negative demonstrations, then all positive demonstrations.
+- `similar_balanced_random`: Positive and negative demonstrations shuffled together as a list with a fixed seed (`random_state=42`). The shuffle removes the similarity order.
 
 **Example:**
 ```bash
